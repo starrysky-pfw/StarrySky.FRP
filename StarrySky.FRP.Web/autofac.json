@@ -1,0 +1,34 @@
+{
+  "components": [
+    {
+      "type": "StarrySky.FRP.Domain.ModelRegister,StarrySky.FRP.Domain",
+      "services": [
+        {
+          "type": "StarrySky.FRP.DbProvider.IModelRegister,StarrySky.FRP.DbProvider"
+        }
+      ],
+      "autoActivate": true,
+      "injectProperties": true
+    },
+    {
+      "type": "StarrySky.FRP.Manager.UserManager,StarrySky.FRP.Manager",
+      "services": [
+        {
+          "type": "StarrySky.FRP.Manager.IUserManager,StarrySky.FRP.Manager"
+        }
+      ],
+      "autoActivate": true,
+      "injectProperties": true
+    },
+    {
+      "type": "StarrySky.FRP.Service.TestA,StarrySky.FRP.Service",
+      "services": [
+        {
+          "type": "StarrySky.FRP.Service.ITestA,StarrySky.FRP.Service"
+        }
+      ],
+      "autoActivate": true,
+      "injectProperties": true
+    }
+  ]
+}

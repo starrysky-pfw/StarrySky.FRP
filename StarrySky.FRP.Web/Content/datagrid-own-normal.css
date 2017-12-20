@@ -1,0 +1,495 @@
+﻿.datagrid-header-row {
+    height: 36px;
+}
+
+.datagrid-toolbar, .datagrid-pager {
+    background: #ffffff;
+}
+
+#promet {
+    background: #ffffff;
+    border-bottom: none;
+    line-height: normal;
+    min-width: 1000px;
+}
+
+.datagrid-header {
+    background: #f0f2f7;
+    font-weight: 600;
+}
+
+.datagrid-td-rownumber {
+    background: #ffffff;
+}
+
+.datagrid-header, .datagrid-toolbar, .datagrid-pager, .datagrid-footer-inner {
+    border-color: #e1e5ed;
+}
+
+.datagrid-row-alt {
+    background: #f8f9fb;
+}
+
+.datagrid-body td, .datagrid-footer td {
+    border-color: #e1e5ed;
+}
+
+.datagrid-view1 {
+    border-left: 1px solid #e1e5ed;
+}
+
+.datagrid-view2 {
+    border-right: 1px solid #e1e5ed;
+}
+
+.datagrid-cell-rownumber {
+    color: #929ea6;
+}
+
+.datagrid-row-over, .datagrid-header td.datagrid-header-over {
+    color: #3b444f;
+    background: #fff9d8;
+}
+
+.datagrid-cell, .datagrid-cell-group, .datagrid-header-rownumber, .datagrid-cell-rownumber {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.query-item {
+    border: 1px solid #cbd1db;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    height: 28px;
+    padding: 0px;
+    padding-left: 8px;
+    /*padding-right: 8px;*/
+    color: #556170;
+    letter-spacing: 0.5px;
+}
+
+    .query-item .inputStyle {
+        border: none;
+        border-style: none;
+        height: 100%;
+        width: 120px;
+        padding: 0px;
+        line-height: 26px;
+        color: #323942;
+        font-weight: 600;
+        background: none;
+    }
+
+.query-btn {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 28px;
+    border-radius: 2px;
+    border: 1px solid #30b195;
+    background: #53c1a9;
+    color: #ffffff;
+}
+
+    .query-btn:hover {
+        background: #58ccb3;
+        border: 1px solid #53c1a9;
+        color: #ffffff;
+    }
+
+select:focus {
+    outline: none;
+}
+
+.combo {
+    border: none;
+    height: 26px !important;
+    font-weight: 800;
+    color: #3b444f;
+    /* background: url(/images/btn_select_bg.png) repeat-x;*/
+    line-height: 26px !important;
+}
+
+input {
+    background: none;
+}
+
+.combo-arrow {
+    background-color: transparent !important;
+    margin-top: 1px;
+}
+
+#promet ul li {
+    padding-top: 12px;
+    padding-left: 0px;
+    padding-right: 6px;
+    margin: 0px;
+}
+
+#promet ul {
+    padding-left: 6px;
+}
+
+.datagrid-header td {
+    border-color: #cbd1db !important;
+}
+
+.btnS {
+    color: #329ced;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: inline-block;
+    padding-right: 24px;
+    font-weight: 500;
+}
+
+    .btnS:hover {
+        color: #1a80d6;
+        text-decoration: underline;
+    }
+/*
+.btnout {
+    margin: 8px;
+    color: #b6b9c4;
+    font-size: 20px !important;
+    font-weight: bold;
+    display: block;
+}
+
+    .btnout:hover {
+        color: #329ced;
+    }
+    */
+button:focus {
+    outline: none !important;
+}
+
+button:active {
+    outline: none !important;
+}
+
+.icon_printer {
+    background: url(/Images/icon_print.png) center center no-repeat;
+}
+
+.l-btn-icon-left .l-btn-text {
+    color: #556170;
+}
+
+.icon_page_white_excel {
+    background: url(/Images/icon_ex.png) center center no-repeat;
+}
+
+.icon-prints {
+    background: url(/Images/icon_guide.png) center center no-repeat;
+}
+
+.print-btn-m {
+    text-decoration: none;
+    color: #556170;
+    font-size: 12px;
+    padding: 0px;
+}
+
+    .print-btn-m:hover {
+        text-decoration: none;
+    }
+
+    .print-btn-m img {
+        margin-right: 1px;
+    }
+
+.btnout {
+    margin: 8px;
+    width: auto;
+    height: 20px;
+    display: block;
+    padding: 0px !important;
+}
+
+    .btnout .del {
+        width: auto;
+        background: url(/images/icon_form_del_nor.png);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        display: block;
+        height: 100%;
+        background-position: center center;
+        width: 14px;
+    }
+
+    .btnout:hover .del {
+        background: url(/images/icon_form_del_hov.png) center center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        display: block;
+        height: 100%;
+        background-position: center center;
+        width: 14px;
+    }
+
+.btnout-h {
+    margin: 8px;
+    width: auto;
+    height: 20px;
+    display: block;
+    padding: 0px !important;
+    padding-top: 1px !important;
+}
+
+    .btnout-h .through {
+        background: url(/images/icon_form_see_nor.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: block;
+        background-position: center center;
+        width: 20px;
+        height: 13px;
+        margin-top: 4px;
+    }
+
+    .btnout-h:hover .through {
+        background: url(/images/icon_form_see_hov.png) center center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        display: block;
+        height: 13px;
+        background-position: center center;
+        width: 20px;
+    }
+
+.btnout-e {
+    margin: 8px;
+    width: auto;
+    height: 19px;
+    display: block;
+    padding: 0px !important;
+    padding-top: 1px !important;
+}
+
+    .btnout-e .edit {
+        background: url(/images/icon_form_edit_nor.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        display: block;
+        height: 100%;
+        width: 18px;
+        background-position: center center;
+    }
+
+    .btnout-e:hover .edit {
+        width: 18px;
+        background: url(/images/icon_form_edit_hov.png) center center;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        display: block;
+        height: 100%;
+        background-position: center center;
+    }
+
+.btnout-code {
+    margin: 8px;
+    width: auto;
+    height: 19px;
+    display: block;
+    padding: 0px !important;
+    padding-top: 1px !important;
+}
+
+    .btnout-code .code {
+        background: url(/images/icon_form_code_nor.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        display: block;
+        height: 100%;
+        width: 19px;
+        background-position: center center;
+    }
+
+    .btnout-code:hover .code {
+        width: 19px;
+        background: url(/images/icon_form_code_hov.png) center center;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        display: block;
+        height: 100%;
+        background-position: center center;
+    }
+
+.h-item {
+    width: auto;
+    padding-right: 10px;
+    padding-top: 12px;
+}
+
+.input-cname {
+    padding: 0px;
+    height: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #cbd1db;
+    margin: 0px;
+    line-height: 28px;
+    display: block;
+    float: left;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-border-top-left-radius: 2px;
+    margin-top: 12px;
+}
+
+    .input-cname:focus {
+        border: 1px solid #329ced;
+    }
+
+    .input-cname:active {
+        border: 1px solid #329ced;
+    }
+
+.input-search {
+    width: 34px;
+    height: 28px;
+    border: 1px solid #cbd1db;
+    display: block;
+    background: url(/Images/icon_form_search-.png);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    line-height: 28px;
+    background-position: center center;
+    padding: 6px;
+    float: left;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    margin-top: 12px;
+    border-left: 0px;
+}
+
+.input-refresh {
+    width: 34px;
+    height: 28px;
+    border: 1px solid #cbd1db;
+    display: block;
+    background: url(/Images/icon_form_refresh.png);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    line-height: 28px;
+    background-position: center center;
+    padding: 6px;
+    float: left;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    margin-top: 12px;
+}
+
+::-webkit-input-placeholder {
+    color: #929ea6 !important;
+    font-weight: normal;
+}
+
+.select {
+    background: url(/Images/img_btn_bg.png) repeat-x;
+}
+
+.q-tool-btn {
+    line-height: 28px;
+    color: #3b444f;
+}
+
+.disabled {
+    border: 1px solid #dadfe8 !important;
+    background: #f2f3f5 !important;
+    color: #bbc6cd !important;
+    box-shadow: none !important;
+}
+
+.bf {
+    display: block;
+    float: left;
+}
+
+.ldel-btn {
+    width: 14px;
+    height: 20px;
+    display: block;
+    background: url(/Images/icon_del_nor.png) no-repeat;
+    border-style: none;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+    .ldel-btn:hover {
+        width: 14px;
+        height: 20px;
+        background: url(/Images/icon_del_hov.png) no-repeat;
+        border-style: none;
+        display: block;
+        margin-top: 5px;
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+
+.normal-input {
+    height: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    font-size: 13px;
+    border: 1px solid #cbd1db;
+    color: #3b444f;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+    .normal-input:hover {
+        border: 1px solid #329ced;
+    }
+
+    .normal-input:focus {
+        border: 1px solid #329ced;
+    }
+
+    .normal-input:active {
+        border: 1px solid #329ced;
+    }
+
+.btn2 {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 28px;
+    border-radius: 2px;
+    border: 1px solid #d9dee4;
+    background: url(/Images/btn_bg.png) repeat-x;
+    color: #3b444f;
+}
+
+    .btn2:hover {
+        background: #58ccb3;
+        border: 1px solid #d9dee4;
+        color: #3b444f;
+        background: url(/Images/btn_bg_hover.png) repeat-x;
+    }
+
+.btn4 {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border: 1px solid #ef6850;
+    background: #f87058;
+    font-family: Arial, "Microsoft Yahei","微软雅黑", Tahoma, Helvetica, STHeiti, serif, "宋体";
+    color: #ffffff;
+}
+
+    .btn4:hover {
+        background: #ff7860;
+        border: 1px solid #f87058;
+        color: #ffffff;
+    }

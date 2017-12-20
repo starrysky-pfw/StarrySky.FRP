@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarrySky.FRP.Web", "StarrySky.FRP.Web\StarrySky.FRP.Web.csproj", "{333F36E7-07E7-43F2-8AE0-5298BB8E3BA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarrySky.FRP.Web.Tests", "StarrySky.FRP.Web.Tests\StarrySky.FRP.Web.Tests.csproj", "{E2ECBD5E-91C1-45D1-88F4-9F2C82C8B0F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarrySky.FRP.DbProvider", "StarrySky.FRP.DbProvider\StarrySky.FRP.DbProvider.csproj", "{CCFF1A51-261B-4047-91DD-7383F7B1B865}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarrySky.FRP.Service", "StarrySky.FRP.Service\StarrySky.FRP.Service.csproj", "{30EEC3A9-1DEF-419C-8A02-ABADA18DFF0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarrySky.FRP.Domain", "StarrySky.FRP.Domain\StarrySky.FRP.Domain.csproj", "{481BBED2-76D3-4BCB-8811-2F89E5054A0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarrySky.FRP.Manager", "StarrySky.FRP.Manager\StarrySky.FRP.Manager.csproj", "{39EAE33C-CFC4-4DCC-83AD-9008D17AC5B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{333F36E7-07E7-43F2-8AE0-5298BB8E3BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{333F36E7-07E7-43F2-8AE0-5298BB8E3BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{333F36E7-07E7-43F2-8AE0-5298BB8E3BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333F36E7-07E7-43F2-8AE0-5298BB8E3BA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2ECBD5E-91C1-45D1-88F4-9F2C82C8B0F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2ECBD5E-91C1-45D1-88F4-9F2C82C8B0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2ECBD5E-91C1-45D1-88F4-9F2C82C8B0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2ECBD5E-91C1-45D1-88F4-9F2C82C8B0F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCFF1A51-261B-4047-91DD-7383F7B1B865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFF1A51-261B-4047-91DD-7383F7B1B865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFF1A51-261B-4047-91DD-7383F7B1B865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFF1A51-261B-4047-91DD-7383F7B1B865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30EEC3A9-1DEF-419C-8A02-ABADA18DFF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30EEC3A9-1DEF-419C-8A02-ABADA18DFF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30EEC3A9-1DEF-419C-8A02-ABADA18DFF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30EEC3A9-1DEF-419C-8A02-ABADA18DFF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{481BBED2-76D3-4BCB-8811-2F89E5054A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{481BBED2-76D3-4BCB-8811-2F89E5054A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{481BBED2-76D3-4BCB-8811-2F89E5054A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{481BBED2-76D3-4BCB-8811-2F89E5054A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39EAE33C-CFC4-4DCC-83AD-9008D17AC5B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39EAE33C-CFC4-4DCC-83AD-9008D17AC5B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39EAE33C-CFC4-4DCC-83AD-9008D17AC5B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39EAE33C-CFC4-4DCC-83AD-9008D17AC5B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91535B3B-4876-4591-B660-67B49521F2AC}
+	EndGlobalSection
+EndGlobal

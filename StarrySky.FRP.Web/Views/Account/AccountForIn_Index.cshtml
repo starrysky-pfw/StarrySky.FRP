@@ -1,0 +1,143 @@
+﻿
+@{
+    ViewBag.Title = "AccountForIn_Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="promet">
+    <ul class="list-unstyled list-inline" style="padding-left:24px;">
+        <li><div class="query-item">账户：<input type="text" class="inputStyle" id="accountId" /></div></li>
+        <li><div class="query-item">收入类型：<input type="text" class="inputStyle" id="revenueType" /></div></li>
+        <li><div class="query-item">收入(开始):<input type="text" class="inputStyle" id="inStartDate" value="@DateTime.Now.ToString("yyyy-MM-dd")" /></div></li>
+        <li><div class="query-item">收入(结束):<input type="text" class="inputStyle" id="inEndDate" value="@DateTime.Now.ToString("yyyy-MM-dd")" /></div></li>
+        <li>
+            <button type="button" class="query-btn" onclick="search()">查询</button>
+            <a href="javascript:void(0)" onclick="rest()" class="btnS" style="display:inline;margin-left:10px;">重置</a>
+        </li>
+    </ul>
+</div>
+<div id="contentBox" style="width:100%;height:500px">
+    <table id="mytable" title="Client Side Pagination" style="width:100%;"></table>
+</div>
+
+<style>
+    #contentBox {
+        min-width: 1000px;
+    }
+</style>
+
+<script>
+    $(function () {
+        $('#mytable').datagrid({
+            url: "AccountForInDataGridData",
+            border: false,//不显示边框线
+            singleSelect: false,//只允许选一行
+            fit: true,
+            pagination: true,//显示分页
+            fitColumns: true,//自动展开
+            rownumbers: true,//显示行号
+            pageSize: 30,
+            striped: true,
+            loadMsg: "数据装载中..",//加载信息
+            onClickRow: function (rowIndex, rowData) {
+                $(this).datagrid('unselectRow', rowIndex);
+            },
+            onLoadError: function (data) {
+                alert("数据加载失败");
+            },
+            columns: [
+                [
+                    {
+                        title: '账户名称',
+                        width: $(this).width() * 0.08,
+                        field: 'AccountName',
+                        align: 'center',
+                        halign: 'center',
+                    },
+                    {
+                        title: '收入类型',
+                        field: 'RevenueType',
+                        width: $(this).width() * 0.08,
+                        align: 'center',
+                        halign: 'center'
+                    },
+                    {
+                        title: '收入时间',
+                        field: 'InDate',
+                        width: $(this).width() * 0.08,
+                        align: 'center',
+                        halign: 'center'
+                    },
+                    {
+                        title: '实际到手资金',
+                        width: $(this).width() * 0.08,
+                        field: 'ActualMoney',
+                        align: 'right',
+                        halign: 'right'
+                    },
+                    {
+                        title: '个税',
+                        field: 'TaxMoney',
+                        width: $(this).width() * 0.08,
+                        align: 'right',
+                        halign: 'right'
+                    },
+                    {
+                        title: '社保',
+                        field: 'SocialSecurityMoney',
+                        width: $(this).width() * 0.08,
+                        align: 'right',
+                        halign: 'right'
+                    },
+                    {
+                        title: '总资金',
+                        field: 'TotalMoney',
+                        width: $(this).width() * 0.08,
+                        align: 'right',
+                        halign: 'right'
+                    },
+                    {
+                        title: '备注',
+                        field: 'Memo',
+                        width: $(this).width() * 0.08,
+                        align: 'left',
+                        halign: 'center'
+                    }
+                ]
+            ]
+        });
+        $("#inStartDate,#inEndDate").initDateCombo();
+    });
+
+    //获取查询条件
+    function getQueryData() {
+        var data = {
+            accountId: $("#accountId").val().trim(),
+            revenueType: $("#revenueType").val().trim(),
+            inStartDate: $("#inStartDate").getComboInputInfo().Name,
+            inEndDate: $("#inEndDate").getComboInputInfo().Name,
+        }
+        return data;
+    }
+
+    //查询
+    function search() {
+        var data = getQueryData();
+        if (data.inStartDate > data.inEndDate) {
+            MessageBox.showYes("提示", "时间范围不符合逻辑！", IconType.warning);
+            return;
+        }
+        $("#mytable").datagrid("load", data);
+    }
+
+        //重置
+        function rest() {
+            $("#accountId,#revenueType").val("");
+            $("#inStartDate").setComboIdName("", "@DateTime.Now.ToString("yyyy-MM-dd")");
+            $("#inStartDate").setComboIdName("", "@DateTime.Now.ToString("yyyy-MM-dd")");
+            //$("#promet").find("select").each(function () {
+            //    $(this).children("option:first").prop("selected", "selected");
+            //});
+            search();
+        }
+</script>
