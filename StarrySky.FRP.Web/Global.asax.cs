@@ -21,6 +21,30 @@ namespace StarrySky.FRP.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Application["CurrentGuests"] = 0;
+            Application["AllGuests"] = 0;
+        }
+
+
+        protected void Session_Start(Object sender, EventArgs e)
+        {
+            Application.Lock();
+            Application["CurrentGuests"] = (int)Application["CurrentGuests"] + 1;//总在线用户数
+            Application["AllGuests"] = (int)Application["AllGuests"] + 1;//访问网站的总用户数
+
+            int CurrentGuests = (int)Application["CurrentGuests"];
+            int AllGuests = (int)Application["AllGuests"];
+            Console.WriteLine(CurrentGuests);
+            Console.WriteLine(AllGuests);
+            Application.UnLock();
+        }
+
+        protected void Session_End(Object sender, EventArgs e)//当前用户退出网站时,在线用户数量-1,
+        {
+            Application.Lock();
+            Application["CurrentGuests"] = (int)Application["CurrentGuests"] - 1;//总在线用户数量-1
+            int CurrentGuests = (int)Application["CurrentGuests"];
+            Application.UnLock();
         }
     }
 }
